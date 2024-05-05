@@ -1,0 +1,40 @@
+---
+import { HeroSectionEnum } from "../../enums/enum";
+import "./HeroSection.css";
+import imagePrincipal from "./../../../public/images_nala/image5.png";
+import imagePrincipal2 from "./../../../public/images_nala/image9.png";
+import imagePrincipal3 from "./../../../public/images_nala/image3.png";
+import imagePrincipal4 from "./../../../public/images_nala/image6.png";
+---
+
+<section
+  id="home"
+  class="hero-container hero-text-white"
+  data-header-color="white"
+>
+  <div class="hero-container">
+    <header class="hero-header-padding">
+      <h2 class="hero-title">
+        {HeroSectionEnum.TITLE}
+      </h2>
+      <p class="hero-subtitle">{HeroSectionEnum.SUB_TITLE}</p>
+    </header>
+
+    <img id="image" src={imagePrincipal} alt="imagePrincipal" />
+    <img id="image1" src={imagePrincipal2} alt="imagePrincipal1" />
+    <img id="image2" src={imagePrincipal3} alt="imagePrincipal2" />
+    <img id="image3" src={imagePrincipal4} alt="imagePrincipal3" />
+
+    <footer class="hero-footer">
+      <div>
+        <a class="hero-button hero-text-white hero-button-transition" href="#"
+          >{HeroSectionEnum.BUTTON}</a
+        >
+      </div>
+    </footer>
+  </div>
+  <div class="hero-video-container">
+    <video class="hero-video" autoplay muted loop src="/nalaCataVideo.webm"
+    ></video>
+  </div>
+</section>

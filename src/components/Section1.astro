@@ -1,0 +1,40 @@
+---
+import { SectionOneEnum } from "./../enums/enum";
+---
+
+<section
+  id="section1"
+  class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden"
+  data-header-color="black"
+>
+  <div class="z-30 relative h-full flex flex-col">
+    <header class="">
+      <h2 class="text-black pt-40 text-[40px] font-medium">
+        {SectionOneEnum.TITLE}
+      </h2>
+      <p class="text-black text-sm">{SectionOneEnum.SUB_TITLE}</p>
+
+      <footer class="flex flex-grow flex-col justify-end pb-24">
+        <div class="gap-x-6 flex mx-auto">
+          <a
+            class="bg-gray-600 rounded text-sm font-medium text-white px-12 py-2 hover:bg-black hover:text-white transition-colors"
+            href="#"
+            >{SectionOneEnum.BUTTON_1}
+          </a>
+          <a
+            class="bg-white rounded text-sm font-medium text-black px-12 py-2 hover:bg-white hover:text-black transition-colors"
+            href="#"
+            >{SectionOneEnum.BUTTON_2}
+          </a>
+        </div>
+      </footer>
+    </header>
+    <div class="absolute top-0 bottom-0 w-full h-full z-10">
+      <img
+        src="/foto1.avif"
+        alt="Model Y"
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
+  </div>
+</section>
